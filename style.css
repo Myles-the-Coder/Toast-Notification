@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, #4568dc, #b06ab3);
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
+  height: 100vh;
+}
+
+body .button {
+  color: purple;
+  font-size: 20px;
+}
+
+body .button:hover {
+  color: purple;
+}
+
+body .button:active {
+  transform: scale(0.98);
+  outline: none;
+}
+
+#toasts {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.toast {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 0.5rem
+}
+
+.toast.info {
+  color: rebeccapurple
+}
+
+.toast.success {
+  color: green
+}
+
+.toast.error {
+  color: red
+}
